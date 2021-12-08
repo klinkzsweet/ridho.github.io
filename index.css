@@ -1,0 +1,74 @@
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.mataangin li p{
+    padding-left: 40px;
+}
+
+img{
+    height: 220px;
+    margin-top: 50px;
+    align-items: center;
+}
+aside{
+    margin-top: 50px;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.tombol{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-sizing: 0 5px 15px -5px #00000070;
+    overflow: hidden;
+    position: relative;
+    color: #2980b9;
+}
+.tombol i{
+    transition: 0.2s linear;
+    font-size: 26px;
+    line-height: 90px;
+}
+.tombol:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+.tombol::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -110px;
+    top: 90px;
+    transform: rotate(45deg);
+    background: #3498db;
+}
+.tombol:hover:before{
+    left: -10px;
+    top: -10px;
+    animation: aaa 0.7s 1;
+}
+@keyframes aaa{
+    0%{
+        left: -110px;
+        top: 90px;  
+    }
+    50%{
+        left: 10px;
+        top: -30px;
+    }
+    100%{
+        left: -10px;
+        top: -10px;
+    }
+}
